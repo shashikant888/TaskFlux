@@ -51,7 +51,7 @@ const allConfig = {
   },
 
   production: {
-    public_url: process.env.URL,
+    public_url: process.env.PROD_URL,
 
     security: {
       session_secret: process.env.SESSION_SECRET,
