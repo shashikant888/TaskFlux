@@ -21,7 +21,7 @@ const allConfig = {
 
     security: {
       session_secret: process.env.SESSION_SECRET || "T8h/Czg4CbYK9x48G3qzH+gi8o4nR9kyReaKuqyNfvo=",
-      session_expire_in: Number(process.env.SESSION_EXPIRE_IN) || process.env.SESSION_EXPIRE_IN || "7d", // 7 day
+      session_expire_in: process.env.SESSION_EXPIRE_IN || "7d", // 7 day
       salt_rounds: process.env.SALT_ROUNDS || 12,
     },
 
@@ -55,6 +55,8 @@ const allConfig = {
 
     security: {
       session_secret: process.env.SESSION_SECRET,
+      session_expire_in: process.env.SESSION_EXPIRE_IN || "7d", // 7 day
+      salt_rounds: process.env.SALT_ROUNDS || 12,
     },
 
     postgres: {
@@ -87,6 +89,8 @@ const allConfig = {
 
     security: {
       session_secret: process.env.SESSION_SECRET,
+      session_expire_in: process.env.SESSION_EXPIRE_IN || "7d", // 7 day
+      salt_rounds: process.env.SALT_ROUNDS || 12,
     },
 
     postgres: {
@@ -148,7 +152,6 @@ const Constants = {
   ...(allConfig[ENV] || allConfig.development),
 };
 
-Constants.security.session_expires_in = Constants.security.session_expire_in;
 Constants.roles = roleConstants;
 Constants.taskStatus = TaskStatusConstants;
 
