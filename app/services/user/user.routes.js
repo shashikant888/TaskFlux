@@ -15,7 +15,7 @@ router.get("/me",
 
 router.get("/",
   AuthMiddleware,
-  roleMiddleware([Constants.roles.MANAGER]),
+  // roleMiddleware([Constants.roles.MANAGER]),
   SchemaValidator(UserValidation.list),
   UserController.list
 );
