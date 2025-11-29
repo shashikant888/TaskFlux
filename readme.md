@@ -27,6 +27,7 @@ TaskFlux is a full-stack request management web application designed to streamli
 
 ---
 
+<a id="overview"></a>
 ## 🎯 Overview
 
 TaskFlux implements a request management system with role-based workflows. It enforces real business rules through a structured approval process:
@@ -38,6 +39,7 @@ TaskFlux implements a request management system with role-based workflows. It en
 
 ---
 
+<a id="features"></a>
 ## ✨ Features
 
 ### Core Functionality
@@ -62,6 +64,7 @@ TaskFlux implements a request management system with role-based workflows. It en
 
 ---
 
+<a id="tech-stack"></a>
 ## 🛠 Tech Stack
 
 ### Backend
@@ -78,6 +81,7 @@ TaskFlux implements a request management system with role-based workflows. It en
 
 ---
 
+<a id="prerequisites"></a>
 ## 📦 Prerequisites
 
 Before running the application, ensure you have:
@@ -89,6 +93,7 @@ Before running the application, ensure you have:
 
 ---
 
+<a id="installation--setup"></a>
 ## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
@@ -131,6 +136,7 @@ The server will start on the configured port (default: 3000).
 
 ---
 
+<a id="environment-variables"></a>
 ## 🔐 Environment Variables
 
 Create a `.env` file in the root directory with the following variables:
@@ -188,6 +194,7 @@ TIME_ZONE=5.5
 
 ---
 
+<a id="running-the-application"></a>
 ## ▶️ Running the Application
 
 ### Health Check Endpoint
@@ -208,6 +215,7 @@ Expected response:
 
 ---
 
+<a id="api-documentation"></a>
 ## 📚 API Documentation
 
 ### Base URL
@@ -345,6 +353,7 @@ Authorization: Bearer {token}
 
 ---
 
+<a id="project-structure"></a>
 ## 📁 Project Structure
 
 ```
@@ -415,6 +424,7 @@ TaskFlux/
 
 ---
 
+<a id="business-logic--workflows"></a>
 ## 🔄 Business Logic & Workflows
 
 ### Task Lifecycle
@@ -479,6 +489,7 @@ KEY RULES:
 
 ---
 
+<a id="authentication--authorization"></a>
 ## 🔐 Authentication & Authorization
 
 ### JWT Token Flow
@@ -514,6 +525,7 @@ Two roles with distinct permissions:
 
 ---
 
+<a id="database-schema"></a>
 ## 💾 Database Schema
 
 ### Users Table
@@ -565,6 +577,7 @@ CREATE TABLE tasks (
 
 ---
 
+<a id="error-handling"></a>
 ## ⚠️ Error Handling
 
 ### Error Response Format
@@ -604,6 +617,7 @@ Include detailed field-level errors:
 
 ---
 
+<a id="logging--monitoring"></a>
 ## 📊 Logging & Monitoring
 
 ### Winston Logger Configuration
@@ -636,6 +650,7 @@ Morgan middleware logs:
 
 ---
 
+<a id="deployment"></a>
 ## 🚀 Deployment
 
 The application is currently deployed on **Railway** at:
