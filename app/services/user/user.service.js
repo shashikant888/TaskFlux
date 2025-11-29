@@ -31,6 +31,18 @@ class UserService {
     }
     user.createdAtText = DateUtils.changeTimezoneFromUtc(user.createdAt, Constants.TIME_ZONE, 'DD/MM/YYY hh:mm A');
 
+    if (user.managerId) {
+      const manager = await UserModel.findByPk(user.managerId, {
+        raw: true,
+        attributes: ["id", "name", "email"],
+      });
+
+      user.manager = manager ? { id: manager.id, name: manager.name, email: manager.email } : null;
+      
+    } else {
+      user.manager = null;
+    }
+
     if (useCache && Constants.IS_REDIS_STORE) {
       await RedisUtils.setRedisDataAsync(cacheKey, JSON.stringify(user));
     }
