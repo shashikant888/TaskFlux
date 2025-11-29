@@ -1,9 +1,10 @@
 # TaskFlux - Request Management Application
 
-**Backend Application** | [Live Demo](https://taskflux-production.up.railway.app/)
+**Backend Application** | [Live Demo](https://taskflux-fe-production.up.railway.app)
 
 TaskFlux is a full-stack request management web application designed to streamline the workflow between employees and managers. It enables employees to create and manage requests while allowing managers to approve or reject them based on business rules.
 
+##### FE Repo: [link](https://github.com/shashikant888/TaskFlux-FE)
 ---
 
 ## 📋 Table of Contents
@@ -734,5 +735,5 @@ This project is licensed under the MIT License - see LICENSE file for details.
 ---
 
 **Version:** 1.0.0  
-**Last Updated:** November 28, 2025  
-**Author:** Shashikant Singh
+**Last Updated:** November 29, 2025  
+**Author:** Shashikant Vishwakarma [shashikant.888.v@gmail.com](shashikant.888.v@gmail.com)
