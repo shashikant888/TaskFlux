@@ -20,6 +20,7 @@ class UserController {
     const users = await UserService.list({ role: req.query.role });
     ResUtils.status(httpStatus.OK).send(res, resConv(users));
   });
+  
 }
 
 export default new UserController();
